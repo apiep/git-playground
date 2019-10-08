@@ -1,0 +1,31 @@
+{
+  "name": "git-playground",
+  "version": "0.0.0-development",
+  "description": "My personal git playground",
+  "main": "index.js",
+  "scripts": {
+    "semantic-release": "semantic-release",
+    "build": "npx webpack",
+    "build:dev": "npx webpack --env.development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apiep/git-playground.git"
+  },
+  "author": "Afief Sholichuddin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apiep/git-playground/issues"
+  },
+  "homepage": "https://github.com/apiep/git-playground#readme",
+  "devDependencies": {
+    "semantic-release": "^15.13.24",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2"
+  }
+}
