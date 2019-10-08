@@ -3,6 +3,7 @@ export default class Something {
     console.log('Something')
   }
   log1(param) {
+    console.log('Something', param)
   }
   log2(param1, param2) {
     console.log('Something', param1, param2)
