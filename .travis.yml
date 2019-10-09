@@ -6,19 +6,17 @@ jobs:
   include:
     # Define the release stage that runs semantic-release
     - stage: release
-      node_js: lts/*
+      node_js: 10
       script:
         - npm run build
-      on:
-        all_branches: true
-        # condition: $TRAVIS_BRANCH =~ ^(master|develop)$
       deploy:
         provider: script
         skip_cleanup: true
-        file_glob: true
-        file: dist/*
         script:
           - npx semantic-release
+      on:
+        all_branches: true
+        # condition: $TRAVIS_BRANCH =~ ^(master|develop)$
 
 git:
   quite: true
