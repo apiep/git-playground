@@ -15,5 +15,6 @@
         ]
       }
     ]
-  ]
+  ],
+  "branch": [{ "name": "develop", "prerelease": true }]
 }
