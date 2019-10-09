@@ -4,20 +4,14 @@ node_js:
 
 jobs:
   include:
-    # - stage: build
-    #   node_js: lts/*
-    #   script:
-    #     - npm run build
     # Define the release stage that runs semantic-release
     - stage: release
       node_js: lts/*
-      # Advanced: optionally overwrite your default `script` step to skip the tests
-      # script: skip
       script:
         - npm run build
       on:
         all_branches: true
-        condition: $TRAVIS_BRANCH =~ ^(master|develop)$
+        # condition: $TRAVIS_BRANCH =~ ^(master|develop)$
       deploy:
         provider: script
         skip_cleanup: true
@@ -34,12 +28,3 @@ branches:
   only:
     - master
     - develop
-# deploy:
-#   provider: release
-#   api_key:
-#     secure: $GH_TOKEN
-#   file_glob: true
-#   file: dist/*
-#   skip_cleanup: true
-#   on:
-#     tags: true
