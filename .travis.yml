@@ -15,6 +15,9 @@ jobs:
       # script: skip
       script:
         - npm run build
+      on:
+        all_branches: true
+        condition: $TRAVIS_BRANCH =~ ^(master|develop)$
       deploy:
         provider: script
         skip_cleanup: true
