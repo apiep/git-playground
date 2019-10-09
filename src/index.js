@@ -9,3 +9,9 @@ export default class Something {
     console.log('Something', param1, param2)
   }
 }
+
+export class Helper {
+  constructor(name) {
+    this.name = name
+  }
+}
