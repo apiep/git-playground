@@ -9,8 +9,7 @@
       {
         "assets": [
           {
-            "path": "dist/*",
-            "label": "JavaScript distribution"
+            "path": "dist/*"
           }
         ]
       }
