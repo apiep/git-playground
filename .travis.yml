@@ -14,9 +14,9 @@ jobs:
         skip_cleanup: true
         script:
           - npx semantic-release
-      on:
-        all_branches: true
-        # condition: $TRAVIS_BRANCH =~ ^(master|develop)$
+        on:
+          all_branches: true
+          condition: $TRAVIS_BRANCH =~ ^(master|develop)$
 
 git:
   quite: true
