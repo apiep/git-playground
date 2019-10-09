@@ -1,6 +1,6 @@
 {
   "name": "@apiep/git-playground",
-  "version": "0.0.0-development",
+  "version": "1.2.0-develop.1",
   "description": "My personal git playground",
   "main": "dist/git-playground.js",
   "files": [
